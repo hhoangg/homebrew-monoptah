@@ -13,15 +13,14 @@ cask "monoptah" do
     strategy :github_latest
   end
 
-  # Only an arm64 build is published.
-  depends_on arch: :arm64
-  depends_on macos: ">= :high_sierra"
-
-  app "Monoptah.app"
-
   # The app updates itself from the fork's releases, so Homebrew should not
   # treat an updated app as a damaged install.
   auto_updates true
+  # Only an arm64 build is published.
+  depends_on arch: :arm64
+  depends_on :macos
+
+  app "Monoptah.app"
 
   zap trash: [
     "~/Library/Application Support/com.monoptah.desktop",
