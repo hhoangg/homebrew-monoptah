@@ -5,8 +5,13 @@ a fork of [monocode](https://github.com/hardbeat920/monocode).
 
 ```sh
 brew tap hhoangg/monoptah
+brew trust hhoangg/monoptah
 brew install --cask monoptah
 ```
+
+Homebrew 7 refuses to load casks from a third-party tap until you trust it, so the
+`brew trust` step is required — without it the install stops with "Refusing to load
+cask ... from untrusted tap".
 
 Apple Silicon only.
 
