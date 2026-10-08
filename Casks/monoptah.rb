@@ -2,8 +2,7 @@ cask "monoptah" do
   version "0.9.4"
   sha256 "e88673aa0071d661f6008c4358d1c98c66afa48062c0c626800d3c4147dc5376"
 
-  url "https://github.com/hhoangg/monoptah/releases/download/v#{version}/Monoptah_#{version}_aarch64.zip",
-      verified: "github.com/hhoangg/monoptah/"
+  url "https://github.com/hhoangg/monoptah/releases/download/v#{version}/Monoptah_#{version}_aarch64.zip"
   name "Monoptah"
   desc "One UI for every agent harness"
   homepage "https://github.com/hhoangg/monoptah"
