@@ -1,6 +1,6 @@
 cask "monoptah" do
-  version "0.9.4"
-  sha256 "e88673aa0071d661f6008c4358d1c98c66afa48062c0c626800d3c4147dc5376"
+  version "0.23.0"
+  sha256 "dbfe884b2d78377e267cb468ce77a49010777e79e1d5bbaea9713502d5727616"
 
   url "https://github.com/hhoangg/monoptah/releases/download/v#{version}/Monoptah_#{version}_aarch64.zip"
   name "Monoptah"
