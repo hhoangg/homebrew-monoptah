@@ -1,6 +1,6 @@
 cask "monoptah-native" do
-  version "0.48.1"
-  sha256 "4450a2d5ab5d54e0dcfc4b30b0047dba67a437479b2a63e97f9ecb32bf0ef697"
+  version "0.53.3"
+  sha256 "56c936fd1f6f30a015d62843af308f4b4f0733d46e1e4b5822d998f02ef069de"
 
   url "https://github.com/hhoangg/monoptah/releases/download/native-v#{version}/MonoptahNative_#{version}_aarch64.zip"
   name "Monoptah Native"
