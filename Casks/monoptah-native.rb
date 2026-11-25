@@ -7,6 +7,8 @@ cask "monoptah-native" do
   desc "Experimental native (Rust + GPUI) build of Monoptah"
   homepage "https://github.com/hhoangg/monoptah"
 
+  deprecate! date: "2026-11-25", because: "has moved to zptah and is no longer maintained", replacement_cask: "hhoangg/zptah/zptah"
+
   # Native releases are tagged native-vX.Y.Z and are never the repo's "latest"
   # release, so look at the release list instead of github_latest.
   livecheck do
@@ -34,6 +36,13 @@ cask "monoptah-native" do
   ]
 
   caveats <<~EOS
+    Monoptah Native is retired and replaced by zptah. Install it with:
+
+      brew install --cask hhoangg/zptah/zptah
+
+    Then quit Monoptah and use zptah > Settings > Import from Monoptah.
+    Migration guide: https://github.com/hhoangg/monoptah#migrate-to-zptah
+
     Monoptah Native is experimental. It installs next to Monoptah (the Tauri
     app) and does not replace it.
 
